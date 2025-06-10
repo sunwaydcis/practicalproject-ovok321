@@ -17,7 +17,7 @@ lazy val root = (project in file("."))
         case _                            => throw new Exception("Unknown platform!")
       }
       Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
-        .map(m => "org.openjfx" % s"javafx-$m" % "21.0.4" classifier osName)
+        .map(m => "org.openjfx" % s"javafx-$m" % "22.0.1" classifier osName)
     },
     libraryDependencies ++= Seq("org.scalafx" %% "scalafx" % "21.0.0-R32")
   )
